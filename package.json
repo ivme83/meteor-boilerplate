@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "test": "meteor test --once --driver-package meteortesting:mocha",
-    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "test": "meteor test --driver-package cultofcoders:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package cultofcoders:mocha",
     "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
   "dependencies": {
@@ -20,5 +20,10 @@
   },
   "engines": {
     "node": "8.11.4"
+  },
+  "devDependencies": {
+    "enzyme": "^3.6.0",
+    "expect": "^23.6.0",
+    "react-addons-test-utils": "^15.6.2"
   }
 }
